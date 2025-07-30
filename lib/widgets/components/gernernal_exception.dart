@@ -23,7 +23,7 @@ class GernernalExceptionState extends State<GernernalException> {
         children: [
           Icon(
             Icons.warning_rounded,
-            color: AppColors.primaryColor,
+            color: AppColor.primaryColor,
             size: height * 0.05,
           ),
           SizedBox(height: height * 0.025),
@@ -31,7 +31,7 @@ class GernernalExceptionState extends State<GernernalException> {
           Text(
             "general_exception".tr,
             style: TextStyle(
-              color: AppColors.primaryColor,
+              color: AppColor.primaryColor,
               fontSize: height * 0.020,
             ),
           ),
@@ -44,12 +44,12 @@ class GernernalExceptionState extends State<GernernalException> {
               width: width * 0.5,
               decoration: BoxDecoration(
                 borderRadius: BorderRadius.circular(20),
-                color: AppColors.primaryColor,
+                color: AppColor.primaryColor,
               ),
               child: Text(
                 "Retry",
                 style: TextStyle(
-                  color: AppColors.secconderyColor,
+                  color: AppColor.white,
                   fontWeight: FontWeight.bold,
                 ),
               ),

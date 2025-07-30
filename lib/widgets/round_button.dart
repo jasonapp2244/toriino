@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:loading_animation_widget/loading_animation_widget.dart';
 
 class RoundButton extends StatefulWidget {
-  final Color backgroundcolor;
+  final Color baseColor;
   final Color textcolor;
   final String title;
   final bool isloading;
@@ -12,7 +12,7 @@ class RoundButton extends StatefulWidget {
 
   const RoundButton({
     super.key,
-    required this.backgroundcolor,
+    required this.baseColor,
     required this.onpress,
     required this.textcolor,
     required this.isloading,
@@ -35,7 +35,7 @@ class _RoundButtonState extends State<RoundButton> {
         height: widget.height,
         decoration: BoxDecoration(
           borderRadius: BorderRadius.circular(20),
-          color: widget.backgroundcolor,
+          color: widget.baseColor,
         ),
         child:
             widget.isloading
@@ -48,7 +48,7 @@ class _RoundButtonState extends State<RoundButton> {
                 : Center(
                   child: LoadingAnimationWidget.staggeredDotsWave(
                     color: Colors.white,
-                    size: widget.height*0.5,
+                    size: widget.height * 0.5,
                   ),
                 ),
       ),

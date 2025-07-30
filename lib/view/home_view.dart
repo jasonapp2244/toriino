@@ -14,7 +14,7 @@ class _HomeViewState extends State<HomeView> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: AppColors.primaryColor,
+      backgroundColor: AppColor.primaryColor,
       body: SafeArea(
         child: SingleChildScrollView(
           child: Padding(
@@ -27,12 +27,18 @@ class _HomeViewState extends State<HomeView> {
                   children: [
                     CircleAvatar(child: Image.asset("name")),
                     Column(
-                      children: [Text("Hi 👋 Jaylon Culhane",style: TextStyle(color: AppColors.secconderyColor),), Text("Mentor",style: TextStyle(color: AppColors.secconderyColor))],
+                      children: [
+                        Text(
+                          "Hi 👋 Jaylon Culhane",
+                          style: TextStyle(color: AppColor.white),
+                        ),
+                        Text("Mentor", style: TextStyle(color: AppColor.white)),
+                      ],
                     ),
                     Container(
                       decoration: BoxDecoration(
                         shape: BoxShape.circle,
-                        color: AppColors.backGroundColor,
+                        color: AppColor.baseColor,
                       ),
                       child: Image.asset("name"),
                     ),
@@ -41,56 +47,85 @@ class _HomeViewState extends State<HomeView> {
                 Container(
                   decoration: BoxDecoration(
                     borderRadius: BorderRadius.circular(22),
-                    color: AppColors.backGroundColor,
+                    color: AppColor.baseColor,
                   ),
-                  child: Row(children: [Image.asset("name"), Text("Switch",style: TextStyle(color: AppColors.secconderyColor))]),
+                  child: Row(
+                    children: [
+                      Image.asset("name"),
+                      Text("Switch", style: TextStyle(color: AppColor.white)),
+                    ],
+                  ),
                 ),
                 Row(
                   children: [
                     Container(
                       decoration: BoxDecoration(
-                        color: AppColors.primaryColor,
+                        color: AppColor.primaryColor,
                         borderRadius: BorderRadius.circular(22),
                       ),
                       child: Column(
                         mainAxisAlignment: MainAxisAlignment.start,
                         children: [
-                          Text("Total Sessions Take",style: TextStyle(color: AppColors.secconderyColor)),
+                          Text(
+                            "Total Sessions Take",
+                            style: TextStyle(color: AppColor.white),
+                          ),
                           Row(
                             crossAxisAlignment: CrossAxisAlignment.end,
-                            children: [Text("26",style: TextStyle(color: AppColors.secconderyColor))],
+                            children: [
+                              Text(
+                                "26",
+                                style: TextStyle(color: AppColor.white),
+                              ),
+                            ],
                           ),
                         ],
                       ),
                     ),
                     Container(
                       decoration: BoxDecoration(
-                        color: AppColors.primaryColor,
+                        color: AppColor.primaryColor,
                         borderRadius: BorderRadius.circular(22),
                       ),
                       child: Column(
                         mainAxisAlignment: MainAxisAlignment.start,
                         children: [
-                          Text("Upcoming Sessions",style: TextStyle(color: AppColors.secconderyColor)),
+                          Text(
+                            "Upcoming Sessions",
+                            style: TextStyle(color: AppColor.white),
+                          ),
                           Row(
                             crossAxisAlignment: CrossAxisAlignment.end,
-                            children: [Text("03",style: TextStyle(color: AppColors.secconderyColor))],
+                            children: [
+                              Text(
+                                "03",
+                                style: TextStyle(color: AppColor.white),
+                              ),
+                            ],
                           ),
                         ],
                       ),
                     ),
                     Container(
                       decoration: BoxDecoration(
-                        color: AppColors.primaryColor,
+                        color: AppColor.primaryColor,
                         borderRadius: BorderRadius.circular(22),
                       ),
                       child: Column(
                         mainAxisAlignment: MainAxisAlignment.start,
                         children: [
-                          Text("Average Rating",style: TextStyle(color: AppColors.secconderyColor)),
+                          Text(
+                            "Average Rating",
+                            style: TextStyle(color: AppColor.white),
+                          ),
                           Row(
                             crossAxisAlignment: CrossAxisAlignment.end,
-                            children: [Text("4.8",style: TextStyle(color: AppColors.secconderyColor))],
+                            children: [
+                              Text(
+                                "4.8",
+                                style: TextStyle(color: AppColor.white),
+                              ),
+                            ],
                           ),
                         ],
                       ),
@@ -100,13 +135,22 @@ class _HomeViewState extends State<HomeView> {
                 Container(
                   decoration: BoxDecoration(
                     borderRadius: BorderRadius.circular(22),
-                    color: AppColors.primaryColor,
+                    color: AppColor.primaryColor,
                   ),
                   width: double.infinity,
                   child: Row(
                     children: [
                       Column(
-                        children: [Text("Total Earings",style: TextStyle(color: AppColors.secconderyColor)), Text("\$540.00",style: TextStyle(color: AppColors.secconderyColor))],
+                        children: [
+                          Text(
+                            "Total Earings",
+                            style: TextStyle(color: AppColor.white),
+                          ),
+                          Text(
+                            "\$540.00",
+                            style: TextStyle(color: AppColor.white),
+                          ),
+                        ],
                       ),
                     ],
                   ),
@@ -114,28 +158,35 @@ class _HomeViewState extends State<HomeView> {
                 Container(
                   decoration: BoxDecoration(
                     borderRadius: BorderRadius.circular(22),
-                    color: AppColors.primaryColor,
+                    color: AppColor.primaryColor,
                   ),
                   width: double.infinity,
                   child: Column(
                     children: [
                       Row(
                         children: [
-                          Text("Stand out with a VerifiedBadge",style: TextStyle(color: AppColors.secconderyColor)),
+                          Text(
+                            "Stand out with a VerifiedBadge",
+                            style: TextStyle(color: AppColor.white),
+                          ),
                           Image.asset("name"),
                         ],
                       ),
                       Text(
-                        "Boost your profile and get listed as a featured mentor to increase your Bookings.",style: TextStyle(color: AppColors.secconderyColor),
+                        "Boost your profile and get listed as a featured mentor to increase your Bookings.",
+                        style: TextStyle(color: AppColor.white),
                       ),
                       Container(
                         decoration: BoxDecoration(
-                          color: AppColors.redColor,
+                          color: AppColor.red,
                           borderRadius: BorderRadius.circular(22),
                         ),
                         child: Row(
                           children: [
-                            Text("Boost Now",style: TextStyle(color: AppColors.secconderyColor)),
+                            Text(
+                              "Boost Now",
+                              style: TextStyle(color: AppColor.white),
+                            ),
                             Image(image: AssetImage("assetName")),
                           ],
                         ),
@@ -144,11 +195,14 @@ class _HomeViewState extends State<HomeView> {
                   ),
                 ),
 
-                Text("Upcoming Seesions",style: TextStyle(color: AppColors.secconderyColor)),
+                Text(
+                  "Upcoming Seesions",
+                  style: TextStyle(color: AppColor.white),
+                ),
                 Container(
                   decoration: BoxDecoration(
                     borderRadius: BorderRadius.circular(22),
-                    color: AppColors.primaryColor,
+                    color: AppColor.primaryColor,
                   ),
                   width: double.infinity,
                   child: Column(
@@ -158,57 +212,108 @@ class _HomeViewState extends State<HomeView> {
                       Row(
                         children: [
                           Image.asset("name"),
-                          Column(children: [Text("Michel",style: TextStyle(color: AppColors.secconderyColor)), Text("Student",style: TextStyle(color: AppColors.secconderyColor))]),
-                        ],
-                      ),
-                      Row(
-                        children: [
-                          Expanded(
-                            child: Divider(color: AppColors.redColor),
-                          ),
-                        ],
-                      ),
-                      Text("10 May, 3:00 PM - 4:00",style: TextStyle(color: AppColors.secconderyColor,fontWeight: FontWeight.bold,fontSize: 28)),
-                      Row(
-                        spacing: 10,
-                        children: [
-                          Column(children: [Text("Type",style: TextStyle(color: AppColors.secconderyColor)), Text("Group",style: TextStyle(color: AppColors.secconderyColor))]),
-                          Container(
-                            height: 10,
-                            width: 5,
-                            decoration: BoxDecoration(
-                              color: AppColors.primaryColor,
-                            ),
-                          ),
-                          Column(children: [Text("Duration",style: TextStyle(color: AppColors.secconderyColor)), Text("1hr",style: TextStyle(color: AppColors.secconderyColor))]),
-                          Container(
-                            height: 30,
-                            width: 1,
-                            decoration: BoxDecoration(
-                              color: AppColors.secconderyColor,
-                            ),
-                          ),
-                          Column(children: [Text("Seats Left",style: TextStyle(color: AppColors.secconderyColor)), Text("2-5",style: TextStyle(color: AppColors.secconderyColor))]),
-                          Container(
-                            height: 10,
-                            width: 5,
-                            decoration: BoxDecoration(
-                              color: AppColors.primaryColor,
-                            ),
-                          ),
                           Column(
                             children: [
-                              Text("Language",style: TextStyle(color: AppColors.secconderyColor)),
-                              Text("English/Arabic",style: TextStyle(color: AppColors.secconderyColor)),
+                              Text(
+                                "Michel",
+                                style: TextStyle(color: AppColor.white),
+                              ),
+                              Text(
+                                "Student",
+                                style: TextStyle(color: AppColor.white),
+                              ),
                             ],
                           ),
                         ],
                       ),
                       Row(
                         children: [
-                          Expanded(
-                            child: Divider(color: AppColors.redColor),
+                          Expanded(child: Divider(color: AppColor.red)),
+                        ],
+                      ),
+                      Text(
+                        "10 May, 3:00 PM - 4:00",
+                        style: TextStyle(
+                          color: AppColor.white,
+                          fontWeight: FontWeight.bold,
+                          fontSize: 28,
+                        ),
+                      ),
+                      Row(
+                        spacing: 10,
+                        children: [
+                          Column(
+                            children: [
+                              Text(
+                                "Type",
+                                style: TextStyle(color: AppColor.white),
+                              ),
+                              Text(
+                                "Group",
+                                style: TextStyle(color: AppColor.white),
+                              ),
+                            ],
                           ),
+                          Container(
+                            height: 10,
+                            width: 5,
+                            decoration: BoxDecoration(
+                              color: AppColor.primaryColor,
+                            ),
+                          ),
+                          Column(
+                            children: [
+                              Text(
+                                "Duration",
+                                style: TextStyle(color: AppColor.white),
+                              ),
+                              Text(
+                                "1hr",
+                                style: TextStyle(color: AppColor.white),
+                              ),
+                            ],
+                          ),
+                          Container(
+                            height: 30,
+                            width: 1,
+                            decoration: BoxDecoration(color: AppColor.white),
+                          ),
+                          Column(
+                            children: [
+                              Text(
+                                "Seats Left",
+                                style: TextStyle(color: AppColor.white),
+                              ),
+                              Text(
+                                "2-5",
+                                style: TextStyle(color: AppColor.white),
+                              ),
+                            ],
+                          ),
+                          Container(
+                            height: 10,
+                            width: 5,
+                            decoration: BoxDecoration(
+                              color: AppColor.primaryColor,
+                            ),
+                          ),
+                          Column(
+                            children: [
+                              Text(
+                                "Language",
+                                style: TextStyle(color: AppColor.white),
+                              ),
+                              Text(
+                                "English/Arabic",
+                                style: TextStyle(color: AppColor.white),
+                              ),
+                            ],
+                          ),
+                        ],
+                      ),
+                      Row(
+                        children: [
+                          Expanded(child: Divider(color: AppColor.red)),
                         ],
                       ),
 
@@ -217,25 +322,34 @@ class _HomeViewState extends State<HomeView> {
                           Container(
                             decoration: BoxDecoration(
                               borderRadius: BorderRadius.circular(22),
-                              color: AppColors.redColor,
+                              color: AppColor.red,
                             ),
                             child: Row(
                               children: [
-                                Text("Start Session",style: TextStyle(color: AppColors.secconderyColor)),
+                                Text(
+                                  "Start Session",
+                                  style: TextStyle(color: AppColor.white),
+                                ),
                                 Image(image: AssetImage("assetName")),
                               ],
                             ),
                           ),
-                          Image(image: AssetImage("assetName"))
+                          Image(image: AssetImage("assetName")),
                         ],
                       ),
-                      SizedBox(width: 5,),
+                      SizedBox(width: 5),
                       Row(
                         children: [
-                          Text("Recent Sessions History",style: TextStyle(color: AppColors.secconderyColor)),
+                          Text(
+                            "Recent Sessions History",
+                            style: TextStyle(color: AppColor.white),
+                          ),
                           Row(
                             children: [
-                              Text("View All",style: TextStyle(color: AppColors.secconderyColor)),
+                              Text(
+                                "View All",
+                                style: TextStyle(color: AppColor.white),
+                              ),
                               Image(image: AssetImage("assetName")),
                             ],
                           ),
